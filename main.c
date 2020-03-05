@@ -23,6 +23,7 @@ int main()
 <<<<<<< HEAD
     const int min = min_element(arr, 10);
 
+<<<<<<< HEAD
     printf("Array: ");
     int i;
     for (i = 0; i < 10; ++i) {
@@ -34,6 +35,16 @@ int main()
     for (i = 0; i < N_ELEMENTS(arr); ++i) {
 >>>>>>> Count array items with macro
         printf("%d ", arr[i]);
+=======
+    const int min = min_element(arr, N_ELEMENTS(arr));
+
+    printf("Array: ");
+    int i = 0;
+    printf("%d", arr[i]);
+    ++i;
+    for (; i < N_ELEMENTS(arr); ++i) {
+        printf(", %d", arr[i]);
+>>>>>>> develop
     }
     printf("\n");
 
